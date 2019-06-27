@@ -64,7 +64,7 @@ namespace VendingMachine {
             Console.Write("Enter Item name: ");
             string name = Console.ReadLine();
         
-            Console.Write("Enter Item price: ");
+            Console.Write("Enter Item price(float) $: ");
             float price = float.Parse(Console.ReadLine());
 
             //------------- Edit from this point to implement Clothing --------//
@@ -90,9 +90,9 @@ namespace VendingMachine {
                 }
                 else if (perish.ToLower() == "n")
                 {
-                    Console.Write("Enter Gross Weight: ");
+                    Console.Write("Enter Gross Weight(g): ");
                     int grossWeight = int.Parse(Console.ReadLine());
-                    Console.Write("Enter Net Weight: ");
+                    Console.Write("Enter Net Weight(g): ");
                     int netWeight = int.Parse(Console.ReadLine());
 
                     NonPerishable newFood = new NonPerishable(name, price, grossWeight, netWeight);
